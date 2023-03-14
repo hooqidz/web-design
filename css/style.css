@@ -172,6 +172,7 @@ body {
 
 .about .row .about-img img {
   width: 100%;
+  border-radius: 5%;
 }
 
 .about .row .content {
@@ -209,16 +210,30 @@ body {
 
 .menu .row .menu-card {
   text-align: center;
+  padding-bottom: 4rem;
 }
 
 .menu .row .menu-card img {
   border-radius: 50%;
-  width: 30%;
+  width: 50%;
 }
 
 .menu .row .menu-card .menu-card-title {
   margin-top: 1.5rem auto 0.5rem;
+  font-size: 1.4rem;
 }
+
+/* Kontak section */
+
+.contact {
+  display: flex;
+  text-align: center;
+}
+
+.contact span {
+  color: var(--primary);
+}
+
 /* Media queries */
 
 /* Laptop */
@@ -231,6 +246,10 @@ body {
 @media (max-width: 768px) {
   html {
     font-size: 62.5%;
+  }
+
+  .menu p {
+    font-size: 1.6rem;
   }
 
   #hamburger-menu {
@@ -280,6 +299,11 @@ body {
   .about .row .content h3 {
     margin-top: 1rem;
     font-size: 2rem;
+  }
+
+  .menu .row .menu-card .menu-card-title {
+    margin-top: 1.5rem auto 0.5rem;
+    font-size: 1.6rem;
   }
 }
 /* Mobile */
